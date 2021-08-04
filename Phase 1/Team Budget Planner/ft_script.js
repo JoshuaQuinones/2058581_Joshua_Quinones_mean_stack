@@ -5,6 +5,7 @@ function display()
     if (projArr == null) //array does not exist
     {
         alert("Could not display table as there are no projects");
+		document.getElementById("contents").innerHTML = "<p class='centered'>Nothing to display</p>";
         return
     }
     else //array will be in string format. Parse to store as array
