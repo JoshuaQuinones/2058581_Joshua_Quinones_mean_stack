@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -12,17 +13,31 @@
     </style>
 </head>
 <body>
-    <header><h3>Add new budget</h3></header>
-    <div id="userInput">
-        <label>Client Name</label>
-        <input type="text" id="clientName"><br/>
-        <label>Project Name</label>
-        <input type="text" id="projectName"><br/>
-        <label>Budget</label>
-        <input type="text" id="budget"><br/>
-        <input type="button" value="add" onclick="addFun()">
-        <input type="button" value="clear" onclick="clearText()"><br/>
+    <div class="container">
+        <header><h3>Add new budget</h3></header>
+        <div id="userInput">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-2" style="float:right"><label>Client Name</label></div>
+                <div class="col-1" style="float:left"><input type="text" id="clientName"></div>
+                <div class="col-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-2"><label>Project Name</label></div>
+                <div class="col-1"><input type="text" id="projectName"></div>
+                <div class="col-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-2"><label>Budget</label></div>
+                <div class="col-1"><input type="text" id="budget"></div>
+                <div class="col-5"></div>
+            </div>
+            <input type="button" value="add" onclick="addFun()">
+            <input type="button" value="clear" onclick="clearText()">
+        </div>
+        <footer><a href="main.html">back</a></footer>
     </div>
-    <footer><a href="main.html">back</a></footer>
 </body>
 </html>

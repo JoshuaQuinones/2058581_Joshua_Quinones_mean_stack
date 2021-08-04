@@ -14,7 +14,7 @@ function display()
     //will write html code in a string to display the table
     let contentsString = "";
     let current = null;
-    let tableStart = "<table><tr><th>Client Name</th><th>Project Name</th><th>Budget</th></tr>"
+    let tableStart = "<table class='table table-striped'><tr><th>Client Name</th><th>Project Name</th><th>Budget</th></tr>"
     let tableEnd = "</table>"
     let totalBudget = 0 //keep track of total budget from all entries
     //iterate through objects and add code to display them to string

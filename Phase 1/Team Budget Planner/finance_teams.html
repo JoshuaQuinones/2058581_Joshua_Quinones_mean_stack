@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        p{
+            text-align: center;
+        }
+        .centered{
+            text-align: center;
+        }
         th{
             background-color: darkslategray;
             color:white;
@@ -19,12 +26,12 @@
     </script>
 </head>
 <body>
-    <head><h3>Annual Budget</h3></head>
+    <head><h3 class="centered">Annual Budget</h3></head>
     <div id="contents">
         <!--Use JS to fill this section based on sessionStorage-->
     </div>
     <footer>
-        <div><br><a href="main.html">back</a></div>
+        <div class="centered"><br><a href="main.html">back</a></div>
     </footer>
     <script>display()</script>
 </body>
