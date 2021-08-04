@@ -2,9 +2,9 @@
 function addFun()
 {
     //validate userinput
-    let clientName = document.getElementById("clientName").value
-    let projectName = document.getElementById("projectName").value
-    let budget = document.getElementById("budget").value
+    let clientName = document.getElementById("clientName").value;
+    let projectName = document.getElementById("projectName").value;
+    let budget = document.getElementById("budget").value;
     if (clientName.length == 0 || projectName.length == 0 || budget.length == 0)
     {
         alert("Could not add project: one or more text fields is empty");
@@ -13,7 +13,7 @@ function addFun()
     budget = parseInt(budget);
     if (isNaN(budget))
     {
-        alert("Could not add project: budget input is not a number")
+        alert("Could not add project: budget input is not a number");
         return;
     }
     //get array from session storage, if it exists
@@ -24,20 +24,29 @@ function addFun()
     }
     else //array exists, will be in string form
     {
-        projArr = JSON.parse(projArr)
+        projArr = JSON.parse(projArr);
     }
     //create object from user inputted data
     let newData = {client:clientName,project:projectName,budg:budget}
     //stringify data before putting in array
-    newData = JSON.stringify(newData)
+    newData = JSON.stringify(newData);
     //add object to front of array
-    projArr.push(newData)
+    projArr.push(newData);
     //now need to stringify entire array before storing in local storage
-    projArr = JSON.stringify(projArr)
+    projArr = JSON.stringify(projArr);
     //update array in session storage
-    sessionStorage.setItem("array", projArr)
+    sessionStorage.setItem("array", projArr);
     //alert user of successful addition
-    alert("Successfully added project")
+    alert("Successfully added project");
+    //clear text fields
+    clearText();
     //for debug
-    console.log("log2:" + projArr)
+    console.log("log2:" + projArr);
+}
+
+function clearText()
+{
+    document.getElementById("clientName").value = "";
+    document.getElementById("projectName").value = "";
+    document.getElementById("budget").value = "";
 }
