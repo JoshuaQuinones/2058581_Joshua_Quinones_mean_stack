@@ -1,0 +1,39 @@
+body{
+    background-color: coral;
+}
+header{
+    width:100%;
+    background-color: coral;
+    height:90px;
+}
+h2{
+    font-weight:bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.links{
+    margin: 13px 0px;
+    font-size: xx-large;
+}
+a:link {
+    color:#222;
+}
+a:visited{
+    color:#222;
+}
+a:hover{
+    background-color: black;
+    color: coral;
+}
+#input{
+    padding: 100px 0px;
+    background-color: #222;
+    color:white
+}
+#input div h1{
+    margin: 0 0 50px;
+    text-align: center;
+}
+.card{
+    margin: 20px 15px 5px 15px;
+}
+

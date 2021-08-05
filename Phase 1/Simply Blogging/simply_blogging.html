@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simply_style.css">
+    <script src="simply_script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2"><h2>Simply Blogging</h2></div>
+                <div class="col-1"></div>
+                <div class="col-3 links">
+                    <a href="">Home</a>
+                </div>
+                <div class="col-3 links">
+                    <a href="">About Us</a>
+                </div>
+                <div class="col-3 links">
+                    <a href="">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Input group reference: https://getbootstrap.com/docs/4.0/components/input-group/-->
+    <div id="input">
+        <div>
+            <h1>Add a blog</h1>
+        </div>
+        <div class = "row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Title</span>
+                    </div>
+                    <input type="text" class="form-control" id="titleBox">
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Article</span>
+                    </div>
+                    <textarea class="form-control" id="articleBox"></textarea>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Add Image URL</span>
+                    </div>
+                    <input type="text" class="form-control" id="imageBox" placeholder="(Optional)">
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-4">
+                <input type="button" class="btn btn-primary" value="Add Blog" id="addButton" onclick="addBlog()">
+            </div>
+        </div>
+    </div>
+    
+    <div id="blogs">
+        <div class="row" id="blog_display">
+            <!--Use JS to fill in this HTML code with available articles-->
+        </div>
+    </div>
+</body>
+</html>
