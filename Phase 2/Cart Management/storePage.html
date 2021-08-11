@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="checkout.js"></script>
+</head>
+<body>
+    <header>
+        <h2 class="centered">Store Page</h2> <br/>
+        <span class="centered bold">Cart size: </span><span class="bold" id="cartsize"><!--Quantity will be displayed ater calling showCartNum()--></span>
+        <a href="checkout.html" id="checkout">Checkout</a>
+    </header>
+    <!--Products available are hardcoded-->
+    <main>
+        <div class = "row">
+            <div class="col-4">
+                <div class="card">  
+                    <img class="card-img-top" src="https://m.ninjakitchen.com/include/images/products/hero-DZ201WBKT.jpg" alt="An air fryer">
+                    <div class="card-body">
+                        <h5 class="card-title centered" class="centered" >Air Fryer</h5>
+                        <p class="card-text centered">$99</p>
+                        <p class="card-text centered">Quantity: 3</p> <!--Quantity displayed and sent to add() function is hardcoded. If change the quantity sent, should update here-->
+                        <p class="card-text centered" id="incart0">Amount in cart: 0</p>
+                        <input type="button" class="btn btn-primary" value="Add to cart" onclick="addToCart(0)">
+                        <input type="button" class="btn btn-secondary remove" value="Remove from cart" onclick="removeFromCart(0)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dcadprod.azureedge.net/b2c-experience-production/attachments/ckkfggxw500e601k3cps7zlab-4w-463-3528701004396-tire-michelin-x-ice-snow-205-slash-55-r16-94h-xl-tl-a-main-1-30.full.png" alt="A tire">
+                    <div class="card-body">
+                        <h5 class="card-title centered" class="centered" >Tire</h5>
+                        <p class="card-text centered">$220</p>
+                        <p class="card-text centered">Quantity: 6</p>
+                        <p class="card-text centered" id="incart1">Amount in cart: 0</p>
+                        <input type="button" class="btn btn-primary" value="Add to cart" onclick="addToCart(1)">
+                        <input type="button" class="btn btn-secondary remove" value="Remove from cart" onclick="removeFromCart(1)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://assets-prd.ignimgs.com/2020/06/12/playstation-5-button-02-1591933908407.jpg" alt="A Playstation 5">
+                    <div class="card-body">
+                        <h5 class="card-title centered" class="centered" >Playstation 5</h5>
+                        <p class="card-text centered">$499</p>
+                        <p class="card-text centered">Quantity: 1</p>
+                        <p class="card-text centered" id="incart2">Amount in cart: 0</p>
+                        <input type="button" class="btn btn-primary" value="Add to cart" onclick="addToCart(2)">
+                        <input type="button" class="btn btn-secondary remove" value="Remove from cart" onclick="removeFromCart(2)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class="col-4">
+                <div class="card">  
+                    <img class="card-img-top" src="https://images.thdstatic.com/productImages/0d0715c5-10ad-4fe1-8a57-9f851380303e/svn/sensorcan-indoor-trash-cans-osc13sbsac-64_1000.jpg" alt="A trash can">
+                    <div class="card-body">
+                        <h5 class="card-title centered" class="centered" >Automatically Opening Trash Can</h5>
+                        <p class="card-text centered">$79</p>
+                        <p class="card-text centered">Quantity: 10</p>
+                        <p class="card-text centered" id="incart3">Amount in cart: 0</p>
+                        <input type="button" class="btn btn-primary" value="Add to cart" onclick="addToCart(3)">
+                        <input type="button" class="btn btn-secondary remove" value="Remove from cart" onclick="removeFromCart(3)">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://lh6.googleusercontent.com/proxy/gXYmuIGqDhGqTDJETemTyM5GsdksiXZM_oOUExXVgRbTmRTi048efv3sAiOuBo2qaCRU7HcFqOHZ7nrbBumhp06A9ezDVs1W-g=w1200-h630-p-k-no-nu" alt="A gps system for boats">
+                    <div class="card-body">
+                        <h5 class="card-title centered" class="centered" >Boat GPS</h5>
+                        <p class="card-text centered">$399</p>
+                        <p class="card-text centered">Quantity: 5</p>
+                        <p class="card-text centered" id="incart4">Amount in cart: 0</p>
+                        <input type="button" class="btn btn-primary" value="Add to cart" onclick="addToCart(4)">
+                        <input type="button" class="btn btn-secondary remove" value="Remove from cart" onclick="removeFromCart(4)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<!--Call showCartNum() to update cart quantity display-->
+<script>showCartNum()</script>
+</html>

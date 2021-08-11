@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="checkout.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="centered">Shopping Cart - Checkout</h2>
+        <a id="returnLink" href="storePage.html">Return to storepage</a>
+    </header>
+    <body>
+        <table class="table" id="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th id="total">Total</th>
+                </tr>
+            </thead>
+            <tbody id="insideTable">
+                <!--Use displayTable() to write this html code-->
+            </tbody>
+        </table>
+        <div id="totalPrice">
+            <!--Use displayTable() to determine total price and write html code here-->
+        </div>
+    </body>
+</body>
+<script>displayTable()</script>
+</html>
