@@ -1,0 +1,13 @@
+#task-adder{
+    margin:15px;
+    width:20%;
+    padding: 10px;
+    border: #59F;
+    border-style:dotted;
+}
+#task-table{
+    width:75%;
+}
+#content{
+    display:flex;
+}

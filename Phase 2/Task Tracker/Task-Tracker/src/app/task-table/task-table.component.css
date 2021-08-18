@@ -1,0 +1,26 @@
+table{
+    width:100%;
+}
+#taskTable{
+    margin:15px
+}
+th{
+    font-size: 15px;
+    background-color: #59F;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    color:black;
+}
+#firstth{
+    border-left: 2px solid black;
+}
+td{
+    font-size: 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+#firsttd{
+    border-left: 1px solid black;
+}

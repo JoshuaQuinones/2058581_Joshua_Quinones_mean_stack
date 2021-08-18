@@ -1,0 +1,36 @@
+<div id="content">
+    <div id="task-adder">
+        <h2>Add task</h2>
+        <form #taskSubmit="ngForm" (ngSubmit)="submitTask(taskSubmit)">
+            <mat-form-field class="taskInput" appearence="fill">
+                <mat-label>Employee ID</mat-label>
+                <input matInput name="empid" ngModel>
+            </mat-form-field>
+            <br/>
+            <mat-form-field class="taskInput" appearence="fill">
+                <mat-label>Employee Name</mat-label>
+                <input matInput name="empname" ngModel>
+            </mat-form-field>
+            <br/>
+            <mat-form-field class="taskInput" appearence="fill">
+                <mat-label>Task</mat-label>
+                <input matInput name="taskname" ngModel>
+            </mat-form-field>
+            <br/>
+            <mat-form-field class="taskInput" appearence="fill">
+                <mat-label>Deadline</mat-label>
+                <input matInput type="date" name="deadline" ngModel>
+            </mat-form-field>
+            <br/>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+            <button type="reset" mat-raised-button color="warn">Reset</button>
+        </form>
+        <br/>
+        {{errorMessage}}
+        <p *ngIf="successMessage">Task successfully added!</p>
+    </div>
+    <app-task-table [taskList]="tasks" id="task-table"></app-task-table>
+</div>
+
+
+

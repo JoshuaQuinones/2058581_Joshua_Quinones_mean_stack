@@ -1,0 +1,27 @@
+<div id="taskTable">
+    <h2>Tasks</h2>
+    <table mat-table [dataSource]="taskList">
+        <ng-container matColumnDef="empID">
+            <th id="firstth" mat-header-cell *matHeaderCellDef>Emp ID</th>
+            <td id="firsttd" mat-cell *matCellDef="let task">{{task.empID}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="empName">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let task">{{task.empName}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="taskName">
+            <th mat-header-cell *matHeaderCellDef>Task</th>
+            <td mat-cell *matCellDef="let task">{{task.taskName}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="taskDeadline">
+            <th mat-header-cell *matHeaderCellDef>Deadline</th>
+            <td mat-cell *matCellDef="let task">{{task.taskDate}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
