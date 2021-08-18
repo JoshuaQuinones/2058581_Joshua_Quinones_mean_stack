@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 import { UserService } from './user.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -12,8 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent,
-    PortfolioComponent
+    SignupComponent
   ],
   imports: [
     BrowserModule,  ReactiveFormsModule

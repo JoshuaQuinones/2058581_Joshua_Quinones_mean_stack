@@ -41,4 +41,10 @@ export class SignupComponent implements OnInit {
       alert("Could not create account: Username already in use")
     }
   }
+    //use event emitter to send target component to parent app.component
+    sendViewChange(target:string):void 
+    {
+      console.log("Calling sendViewChange");
+      this.changeView.emit(target);
+    }
 }
