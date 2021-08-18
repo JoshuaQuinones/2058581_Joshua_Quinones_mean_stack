@@ -1,0 +1,11 @@
+<div>
+    <h2>Log in to your Portfolio</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="attemptLogin()">
+        <label>UserName</label>
+        <input type="text"      formControlName="uname"/><br/>
+        <label>Password</label>
+        <input type="password"  formControlName="pword"/><br>
+        <input type="submit" value="Submit" [disabled]="!loginForm.valid"><button (click)='sendViewChange("signup")'>Sign Up</button>
+    </form>
+    {{loginMessage}}
+</div>

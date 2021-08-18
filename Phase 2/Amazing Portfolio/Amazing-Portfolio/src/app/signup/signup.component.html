@@ -1,0 +1,14 @@
+<div>
+    <h2>Register a new user</h2>
+    <form [formGroup]="signUpForm" (ngSubmit)="createAccount()">
+        <label>First Name</label>
+        <input type="text" formControlName="fname"/><br/>
+        <label>Last Name</label>
+        <input type="text" formControlName="lname"/><br>
+        <label>UserName</label>
+        <input type="text" formControlName="uname"/><br/>
+        <label>Password</label>
+        <input type="text" formControlName="pword"/><br/>
+        <input type="submit" value="Submit" [disabled]="!signUpForm.valid"><input type="reset" value="Reset">
+    </form>
+</div>

@@ -1,0 +1,38 @@
+<div>
+  <div *ngIf="login">
+    <app-login (changeView)="updateView($event)"></app-login>
+  </div>
+  <div *ngIf="signup">
+    <app-signup (changeView)="updateView($event)"></app-signup>
+  </div>
+  <div *ngIf="portfolio">
+    <h2>My Portfolio</h2>
+    <br/>
+    <p>Welcome, {{userFName}} {{userLName}}</p>
+    <br/>
+    <form [formGroup]="portForm" (ngSubmit)="addPort()">
+      <label>Contact Name</label>
+      <input type="text" formControlName="name"/><br/>
+      <label>Phone Number</label>
+      <input type="text" formControlName="num"/><br/>
+      <input type="submit" value="Save" [disabled]="!portForm.valid">
+    </form>
+    {{portMessage}}
+    <hr>
+    <table border=1>
+      <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+      </tr>
+      <tr *ngFor="let n of userPortfolios">
+        <td>{{n.contactName}}</td>
+        <td>{{n.phoneNumber}}</td>
+      </tr>
+    </table>
+    <hr>
+    <button (click)='portForm.reset(); updateView("login")'>Sign out</button>
+  </div>
+  <hr>
+  <hr>
+  <h2>Warning: Refreshing page will lose all data</h2>
+</div>

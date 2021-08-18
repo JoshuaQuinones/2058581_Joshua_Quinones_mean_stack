@@ -1,0 +1,45 @@
+<div>
+    <div *ngIf="loginTrue">
+        <div>
+            <h2>Log in to your Portfolio</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="attemptLogin()">
+                <label>UserName</label>
+                <input type="text"      formControlName="uname"/><br/>
+                <label>Password</label>
+                <input type="password"  formControlName="pword"/><br>
+                <button (click)="attemptLogin()" [disabled]="!loginForm.valid">Log In</button><button (click)='goToSignup()'>Sign Up</button>
+            </form>
+            {{loginMessage}}
+        </div>
+    </div>
+
+    <div *ngIf="signupTrue">
+        <h2>Register a new user</h2>
+        <form [formGroup]="signUpForm" (ngSubmit)="createAccount()">
+            <label>First Name</label>
+            <input type="text" formControlName="fname"/><br/>
+            <label>Last Name</label>
+            <input type="text" formControlName="lname"/><br>
+            <label>UserName</label>
+            <input type="text" formControlName="uname"/><br/>
+            <label>Password</label>
+            <input type="text" formControlName="pword"/><br/>
+            <input type="submit" value="Submit" [disabled]="!signUpForm.valid"><input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <div *ngIf="portfolioTrue">
+        <h2>My Portfolio</h2>
+        <br/>
+        <p>Welcome, {{userFName}} {{userLName}}</p>
+        <br/>
+        <form [formGroup]="portForm" (ngsubmit)="addPort()">
+          <label>Contact Name</label>
+          <input type="text" formControlName="name"/><br/>
+          <label>Phone Number</label>
+          <input type="text" formControlName="num"/><br/>
+          <input type="submit" value="Save">
+        </form>
+        <hr>
+    </div>
+</div>
