@@ -1,0 +1,123 @@
+[
+    {
+        "question":"What does TCS stand for?", 
+        "ans1":"Tata Consultancy Services", 
+        "ans2":"Technology Consultancy Services",
+        "ans3":"Tata Computer Services",
+        "ans4":"Technology Connections Services",
+        "correct":"Tata Consultancy Services"
+    },
+    {
+        "question":"What does PC stand for?", 
+        "ans1":"Professional Computer", 
+        "ans2":"Performing Calculations",
+        "ans3":"Personal Computer",
+        "ans4":"Performance Completed",
+        "correct":"Personal COmputer"
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    },
+    {
+        "question":"", 
+        "ans1":"", 
+        "ans2":"",
+        "ans3":"",
+        "ans4":"",
+        "correct":""
+    }
+
+]
