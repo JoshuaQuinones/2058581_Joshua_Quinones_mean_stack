@@ -1,18 +1,25 @@
 <div>
     <h1>Online Test Application </h1>
-    <form (ngSubmit)="submitExam()" >
-        <div class="question" *ngFor="let q of questionNumbers">
-            <span class="questionNumber">Question {{q+1}}:</span><span class="question">{{questions[q].question}}</span><br>
-            <mat-radio-group aria-label="Select an answer">
-                <mat-radio-button value="1">{{questions[q].ans1}}</mat-radio-button><br>
-                <mat-radio-button value="2">{{questions[q].ans2}}</mat-radio-button><br>
-                <mat-radio-button value="3">{{questions[q].ans3}}</mat-radio-button><br>
-                <mat-radio-button value="4">{{questions[q].ans4}}</mat-radio-button><br>
-                <br>
-            </mat-radio-group>
-        </div>
-        <button type="submit" mat-raised-button color="primary">Submit Exam</button>
-    </form>
-    <span id="submitYes">{{examSubmitMessage}}</span>
-    <span id="submitNo">{{examFailMessage}}</span>
+    <div id="content">
+        <form [formGroup]="examForm" (ngSubmit)="submitExam()"> 
+            <div class="question" *ngFor="let q of questionNumbers">
+                <span class="questionNumber">Question {{q+1}}: </span><span class="question">{{questions[q].question}}</span><br>
+                <mat-radio-group formControlName={{q}} aria-label="Select an answer">
+                    <span id="{{q}}ans1"><mat-radio-button value="1">{{questions[q].ans1}}</mat-radio-button></span><br>
+                    <span id="{{q}}ans2"><mat-radio-button value="2">{{questions[q].ans2}}</mat-radio-button></span><br>
+                    <span id="{{q}}ans3"><mat-radio-button value="3">{{questions[q].ans3}}</mat-radio-button></span><br>
+                    <span id="{{q}}ans4"><mat-radio-button value="4">{{questions[q].ans4}}</mat-radio-button></span> <br>
+                    <span class="correct" id="{{q}}correct"></span>
+                    <span class="incorrect" id="{{q}}incorrect"></span>
+                    <br>
+                    <br>
+                </mat-radio-group>
+            </div>
+            <span id="resubmit">{{examResubmitMessage}}</span><br>
+            <button [disabled]="examForm.invalid" type="submit" mat-raised-button color="primary">Submit Exam</button>
+        </form>
+        <br>
+        <span id="examPass">{{examPassMessage}}<br>{{examPassMessage2}}</span>
+        <span id="examFail">{{examFailMessage}}<br>{{examFailMessage2}}</span>
+    </div>
 </div>

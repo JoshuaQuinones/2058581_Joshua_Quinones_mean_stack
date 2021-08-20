@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+.correct{
+    color:green;
+    font-weight:bold;
+}
+.incorrect{
+    color:red;
+    font-weight:bold;
+}
+.questionNumber{
+    font-weight:bold;
+}
+#examPass{
+    font-size:large;
+    color:blue;
+}
+#examFail{
+    font-size:large;
+    color:red;
+}
+#content{
+    margin:10px;
+}
+#resubmit{
+    color:darkgray;
+    font-size:large;
+}

@@ -5,7 +5,7 @@
         "ans2":"Technology Consultancy Services",
         "ans3":"Tata Computer Services",
         "ans4":"Technology Connections Services",
-        "correct":"Tata Consultancy Services"
+        "correct":"1"
     },
     {
         "question":"What does PC stand for?", 
@@ -13,111 +13,110 @@
         "ans2":"Performing Calculations",
         "ans3":"Personal Computer",
         "ans4":"Performance Completed",
-        "correct":"Personal COmputer"
+        "correct":"3"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"What is 5+5?", 
+        "ans1":"9", 
+        "ans2":"10",
+        "ans3":"11",
+        "ans4":"12",
+        "correct":"2"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"How many questions are on this exam?", 
+        "ans1":"5", 
+        "ans2":"10",
+        "ans3":"15",
+        "ans4":"20",
+        "correct":"3"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which of the following is worn on the face?", 
+        "ans1":"Pants", 
+        "ans2":"Shoes",
+        "ans3":"Shirt",
+        "ans4":"Glasses",
+        "correct":"4"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which country is the car company Kia from?", 
+        "ans1":"United States of America", 
+        "ans2":"South Korea",
+        "ans3":"Japan",
+        "ans4":"United Kingdom",
+        "correct":"2"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"How many bits are in a byte?", 
+        "ans1":"2", 
+        "ans2":"4",
+        "ans3":"8",
+        "ans4":"16",
+        "correct":"3"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which Phase End Project is this?", 
+        "ans1":"Phase 1", 
+        "ans2":"Phase 2",
+        "ans3":"Phase 3",
+        "ans4":"Phase 4",
+        "correct":"2"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which of these is not a Microsoft Office product?", 
+        "ans1":"Word", 
+        "ans2":"Excel",
+        "ans3":"Outlook",
+        "ans4":"Acrobat",
+        "correct":"4"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"The virtual reality headset manufacturer Oculus is owned by which company?", 
+        "ans1":"Google", 
+        "ans2":"Apple",
+        "ans3":"Microsoft",
+        "ans4":"Facebook",
+        "correct":"4"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which of these is the JSON escape character?", 
+        "ans1":"\\", 
+        "ans2":"/",
+        "ans3":"#",
+        "ans4":"|",
+        "correct":"1"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which of these is an amphibian?", 
+        "ans1":"Snake", 
+        "ans2":"Turtle",
+        "ans3":"Frog",
+        "ans4":"Lizard",
+        "correct":"3"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which of these letters comes earliest in the alphabet?", 
+        "ans1":"G", 
+        "ans2":"C",
+        "ans3":"E",
+        "ans4":"H",
+        "correct":"2"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Which of the following is a dairy product?", 
+        "ans1":"Milk", 
+        "ans2":"Cheese",
+        "ans3":"Yogurt",
+        "ans4":"All of the above",
+        "correct":"4"
     },
     {
-        "question":"", 
-        "ans1":"", 
-        "ans2":"",
-        "ans3":"",
-        "ans4":"",
-        "correct":""
+        "question":"Are these good test questions?", 
+        "ans1":"Absolutely!", 
+        "ans2":"Probably",
+        "ans3":"Most of them are",
+        "ans4":"Definitely not",
+        "correct":"4"
     }
-
 ]
