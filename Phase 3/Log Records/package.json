@@ -1,0 +1,15 @@
+{
+  "name": "logging-records",
+  "version": "1.0.0",
+  "description": "for logging records project",
+  "main": "log-records.js",
+  "dependencies": {
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Quinones",
+  "license": "ISC"
+}
