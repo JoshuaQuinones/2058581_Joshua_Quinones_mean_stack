@@ -49,7 +49,7 @@ function logRecord() {
                     debugger;
                     //get current date and time
                     let time = new Date;
-                    let currentDate = time.getDate() + "/" +  time.getMonth() + "/" + time.getFullYear();
+                    let currentDate = time.getDate() + "/" +  (time.getMonth() + 1) + "/" + time.getFullYear();
                     let currentTime = time.getHours() + ":" + time.getMinutes();
                     console.log("\nCurrent date and time:")
                     console.log(currentDate);
