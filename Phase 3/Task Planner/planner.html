@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function listTasks() 
+    {
+        console.log("Called listTasks")
+    }
+    </script>
+    <style>
+        pre{
+            display:inline;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Planner</h1>
+    <hr>
+    <h2>Add Task</h2>
+    <form action="addTask" method="GET">
+        <label>Emp ID:</label><pre>&#9</pre>
+        <input type="text" name="empId" required><br>
+        <label>Task ID:</label><pre>&#9</pre>
+        <input type="text" name="taskId" required><br>
+        <label>Task: </label><pre>&#9&#9</pre>
+        <input type="text" name="task" required><br>
+        <label>Deadline: </label><pre>&#9</pre>
+        <input type="date" name="deadline" required><br>
+        <input type="submit" value="Add Task">
+        <input type="reset" value="Reset Form">
+    </form>
+    <hr>
+    <h2>Delete Task</h2>
+    <form action="deleteTask" method="GET">
+        <label>Task ID:</label>
+        <input type="text" name="taskId" required>
+        <input type="submit" value="Delete Task">
+    </form>
+    <hr>
+    <h2>List Tasks</h2>
+    <a href="listTasks">List All Tasks</a>
+</body>
+</html>
