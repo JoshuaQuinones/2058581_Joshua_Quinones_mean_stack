@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        var socket = io();
+        function sendMessage() {
+            //send message in two parts, the client name and their message
+            let message = [document.getElementById("name").value, document.getElementById("message").value];
+            //convert to json string before sending, and have server parse when receiving
+            let messageJson = JSON.stringify(message);
+            socket.emit("chat", messageJson)
+            //append sent message to end of chat history
+            document.getElementById("history").value = message[0] + ": " + message[1] + "\n" + document.getElementById("history").value;
+            //empty the message box
+            document.getElementById("message").value = "";
+        }
+        socket.on("connect", ()=> {
+            document.getElementById("history").value = "Successfully connected to server" + "\n" + document.getElementById("history").value;
+        })
+        socket.on("response", (msg)=> {
+            console.log(msg)
+            //append message from server to end of chat history
+            document.getElementById("history").value = "Chatbot-" +  msg + "\n" + document.getElementById("history").value;
+        })
+    </script>
+</head>
+<body>
+    <h2>Support Chatbot</h2>
+    <form>
+        <label>Name:</label>
+        <input type="text" id="name"><br/>
+        <label>Message:</label><br/>
+        <textarea id="message" id="" cols="50" rows="3"></textarea><br/>
+        <input type="button" value="Send" onclick="sendMessage()">
+    </form>   
+    <br/><br/>
+    <!--Display newest messages first so user doesn't have to scroll to bottom to see new messages-->
+    <h3>Chat History - Newest Messages First</h3>
+    <textarea id="history" cols="50" rows="10" readonly style="resize:none"></textarea> 
+</body>
+</html>
