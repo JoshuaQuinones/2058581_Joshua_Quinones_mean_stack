@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        var socket = io();
+        function sendMessage() {
+            //send message in two parts, name and message
+            let message = [document.getElementById("name").value, document.getElementById("message").value];
+            //convert to json string before sending, and have server parse when receiving
+            let messageJson = JSON.stringify(message);
+            socket.emit("chat", messageJson)
+            //empty the message box
+            document.getElementById("message").value = "";
+        }
+        socket.on("connect", ()=> {
+            document.getElementById("connected").innerHTML = "Successfully connected to server";
+        })
+
+        //Receive messages from server to confirm that the previously sent message was received
+        socket.on("response", (msg)=> {
+            //append message from server to end of chat history
+            document.getElementById("server").innerHTML = msg;
+        })
+    </script>
+</head>
+<body>
+    <h2>Chatbox for Chatlog</h2>
+    <p id="connected"></p>
+    <form>
+        <label>Name:</label>
+        <input type="text" id="name"><br/>
+        <label>Message:</label><br/>
+        <textarea id="message" id="" cols="30" rows="5"></textarea><br/>
+        <input type="button" value="Send" onclick="sendMessage()">
+    </form>   
+    <br/>
+    <!--Display only the most recently received message from the server-->
+    <p id="server"></p>
+</body>
+</html>
